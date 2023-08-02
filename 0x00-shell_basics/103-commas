@@ -1,2 +1,2 @@
 #!/bin/bash
-
+ls -p | grep -v '^..*$' | sort -d -k1.1,1.1 -k1.2n -t / | tr '\n' ',' && echo
